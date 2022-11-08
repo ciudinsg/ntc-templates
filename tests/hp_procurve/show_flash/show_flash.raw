@@ -1,1 +1,6 @@
-
+Image           Size(Bytes)   Date   Version
+-----           ----------  -------- -------
+Primary Image   : 3257994   10/09/17 N.11.78
+Secondary Image : 3257956   02/02/17 N.11.76
+Boot Rom Version: N.10.01
+Current Boot    : Primary
