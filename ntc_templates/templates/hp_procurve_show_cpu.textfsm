@@ -1,0 +1,13 @@
+Value PERCENT_BUSY ([\d]+)
+Value FROM_TIME_AGO ([\d]+\s[\w]*)
+Value AVG_1_SEC ([\d]+)
+Value AVG_5_SEC ([\d]+)
+Value AVG_1_MIN ([\d]+)
+
+Start
+  ^${PERCENT_BUSY}\s+percent busy, from\s+${FROM_TIME_AGO}
+  ^1\s+sec ave:\s*${AVG_1_SEC}
+  ^5\s+sec ave:\s*${AVG_5_SEC}
+  ^1\s+min ave:\s*${AVG_1_MIN}
+  ^\s*$$
+  ^. -> Error
