@@ -1,0 +1,22 @@
+Value PRI_IMG_NAME ([P]\w+\s\w+)
+Value PRI_IMG_SIZE (\S+)
+Value PRI_IMG_DATE (\S+)
+Value PRI_IMG_VER (\S+)
+Value SEC_IMG_NAME ([S]\w+\s\w+)
+Value SEC_IMG_SIZE (\S+)
+Value SEC_IMG_DATE (\S+)
+Value SEC_IMG_VER (\S+)
+Value BOOTROM_VER (\S+)
+Value CURRENT_BOOT (\S+)
+
+
+Start
+  ^\.*- -> INFO
+
+INFO
+  ^${PRI_IMG_NAME}\s*:\s+${PRI_IMG_SIZE}\s+${PRI_IMG_DATE}\s+${PRI_IMG_VER}\s*$$
+  ^${SEC_IMG_NAME}\s*:\s+${SEC_IMG_SIZE}\s+${SEC_IMG_DATE}\s+${SEC_IMG_VER}\s*$$
+  ^\s*Boot Rom Version\s*:\s+${BOOTROM_VER}\s*$$
+  ^\s*Current Boot\s+:\s+${CURRENT_BOOT}\s*$$
+  ^\s*$$
+  ^. -> Error
