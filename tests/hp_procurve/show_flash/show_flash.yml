@@ -1,0 +1,12 @@
+---
+parsed_sample:
+    pri_img_name: "Primary Image"
+    pri_img_size: "3257994"
+    pri_img_date: "10/09/17"
+    pri_img_ver: "N.11.78"
+    sec_img_name: "Secondary Image"
+    sec_img_size: "3257956"
+    sec_img_date: "02/02/17"
+    sec_img_ver: "N.11.76"
+    bootrom_ver: "N.10.01"
+    current_boot: "Primary"
