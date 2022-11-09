@@ -1,0 +1,7 @@
+---
+parsed_sample:
+    percent_busy: "5"
+    from_time_ago: "197 sec"
+    avg_1_sec: "5"
+    avg_5_sec: "17"
+    avg_1_min: "80"
